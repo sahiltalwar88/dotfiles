@@ -1,0 +1,9 @@
+[user]
+	name = Sahil Talwar
+	email = sahiltalwar88@gmail.com
+[color]
+	ui = auto
+[merge]
+	tool = kdiff3
+[merge "ours"]
+	driver = true
