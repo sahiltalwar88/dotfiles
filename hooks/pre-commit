@@ -1,4 +1,4 @@
-# NOTE: NEEDS TO GO INTO .git/hooks in the relevant repository!
+# NOTE: NEEDS TO GO INTO .git/hooks in the relevant repository, then have chmod +x run on it!
 #
 #!/bin/sh
 #
