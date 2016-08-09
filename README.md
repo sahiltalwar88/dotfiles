@@ -1,1 +1,1 @@
-# My OSX Settings
+# OS and GIT Settings
