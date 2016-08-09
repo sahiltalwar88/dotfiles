@@ -1,0 +1,24 @@
+# NOTE: NEEDS TO GO INTO .git/hooks in the relevant repository!
+#
+#!/bin/sh
+#
+# A hook script to verify what is about to be committed doesn't have
+# any tests marked with '.only'
+#
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+    against=HEAD
+else
+    # Initial commit: diff against an empty tree object
+    against=4b825dc642cb6eb9a060e54bf8d69288fbee4904
+fi
+SEARCH="(it\.only|describe\.only|context\.only|console\.log)"
+if test $(git diff --cached --diff-filter=AM -G"$SEARCH" $against | wc -l) != 0
+then
+  echo 1>&2 "\033[01;31mFailed to commit due to using .only on a test block or console.log:\033[00m"
+  git diff --cached --diff-filter=AM -G"$SEARCH" $against
+  exit 1
+fi
