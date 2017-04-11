@@ -18,6 +18,8 @@ export PS1='\[\033[01;31m\]\u\[\033[00m\]@\[\033[01;36m\]\h\[\033[00m\]:\[\033[0
 alias c=clear
 alias a='atom .'
 alias watch='npm run gulp watch'
+alias lxnuke='pgrep node | xargs -n 1 kill'
+alias yi='yarn install'
 
 # LX setup
 . ~/env/.lxprofile
