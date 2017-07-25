@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#151718",
+        "editor.background": "#151718",
+        "editor.lineHighlightBackground": "#000000",
+        "sideBar.background": "#151718",
+        "tab.activeBackground": "#000000",
+        "tab.inactiveBackground": "#1f2326",
+        "input.background": "#000000"
+    }
+}
