@@ -1,5 +1,32 @@
 {
-    "workbench.colorTheme": "Monokai",
+    "atomKeymap.promptV3Features": true,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.tabCompletion": true,
+    "editor.tabSize": 2,
+    "editor.tokenColorCustomizations": {
+        "variables": "#DEDEDE"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/_dist": true,
+        "**/node_modules": true,
+        "**/.vscode": true
+    },
+    "flow.useNPMPackagedFlow": true,
+    "javascript.validate.enable": false,
+    "openInGitHub.providerType": "github",
+    "standard.autoFixOnSave": true,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/_dist": true
+    },
+    "standard.run": "onSave",
     "workbench.colorCustomizations": {
         "activityBar.background": "#151718",
         "editor.background": "#151718",
@@ -8,5 +35,7 @@
         "tab.activeBackground": "#000000",
         "tab.inactiveBackground": "#1f2326",
         "input.background": "#000000"
-    }
+    },
+    "workbench.colorTheme": "Monokai",
+    "window.zoomLevel": 0
 }
