@@ -1,3 +1,4 @@
+// The settings below are intended to customize Monokai, not the default VS Code Color Theme
 {
     "atomKeymap.promptV3Features": true,
     "editor.formatOnPaste": true,
