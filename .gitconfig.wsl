@@ -1,0 +1,3 @@
+# WSL only: install.sh links this to ~/.gitconfig.local on WSL machines.
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe

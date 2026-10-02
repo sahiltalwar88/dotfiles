@@ -1,0 +1,9 @@
+# Personal instructions (all projects)
+
+## Replies must stand on their own
+
+I often read your reply hours after I sent the prompt, while juggling several agents, and a reply often covers several things at once. Write every reply so it makes sense with no memory of the conversation:
+
+- When you ask me a question or refer to an earlier point, restate the context in the same place: what the thing is, where it lives, what its current value or state is, and why it matters. "Should I change it?" is useless; "`resume_grade_threshold` in `config.json` is 8.5, and the last run's best resume scored 8.25 — lower it to 7 for the test only, or for every user?" works.
+- Name things by what they are, never by a label you coined earlier ("Q3", "option b", "the fix") unless you repeat what that label means.
+- When a reply covers several items, give each one its own clearly labelled part, and make each part self-contained.

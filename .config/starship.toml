@@ -1,0 +1,38 @@
+# https://starship.rs/config/
+
+# WSL2 cold-cache reads can exceed starship's 30ms default, causing
+# "Scanning current directory timed out" warnings. 500ms is plenty
+# for the ext4 root filesystem while staying imperceptible at the prompt.
+scan_timeout = 500
+command_timeout = 1000
+
+[directory]
+# Don't truncate the path — we want to see exactly where we are
+truncate_to_repo = false
+style = "bold cyan"
+
+[git_status]
+# Keep it simple: don't count ahead/behind (slow on large repos)
+ahead = ""
+behind = ""
+diverged = ""
+
+[git_branch]
+style = "bold purple"
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+
+# Disable modules that scan for language-specific files on every prompt.
+# We don't need runtime version detection in this workspace.
+[nodejs]
+disabled = true
+[python]
+disabled = true
+[rust]
+disabled = true
+[golang]
+disabled = true
+[package]
+disabled = true

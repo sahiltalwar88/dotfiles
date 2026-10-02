@@ -1,0 +1,72 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(git stash:*)",
+      "Bash(git add -A:*)",
+      "Bash(git add --all:*)",
+      "Bash(git add .:*)",
+      "Bash(git add -u:*)",
+      "Bash(git commit -a:*)",
+      "Bash(git commit -am:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean:*)",
+      "Bash(git checkout -- .:*)",
+      "Bash(git checkout .:*)",
+      "Bash(git restore .:*)",
+      "Bash(git restore --staged .:*)",
+      "Bash(pkill:*)",
+      "Bash(killall:*)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(git commit --no-verify:*)",
+      "Bash(git commit -n:*)",
+      "Bash(git rebase:*)",
+      "Bash(git checkout -b:*)",
+      "Bash(git switch:*)",
+      "Bash(git branch -D:*)",
+      "Bash(git tag:*)",
+      "Bash(rm -rf:*)",
+      "Bash(npm install:*)",
+      "Bash(npm ci:*)"
+    ]
+  },
+  "model": "opus[1m]",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 __HOME__/.claude/bin/session-summary.py hook",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "still-going@sahil-mods": true,
+    "session-ledger@sahil-mods": true,
+    "knob-card@sahil-private-mods": true
+  },
+  "extraKnownMarketplaces": {
+    "sahil-mods": {
+      "source": {
+        "source": "directory",
+        "path": "__HOME__/dev/claude-mods"
+      }
+    },
+    "sahil-private-mods": {
+      "source": {
+        "source": "directory",
+        "path": "__HOME__/dev/claude-mods-private"
+      }
+    }
+  },
+  "theme": "dark"
+}
